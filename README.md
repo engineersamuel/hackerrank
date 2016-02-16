@@ -1,1 +1,1 @@
-# hackerrank
+# Hackerrank SolutionsThis repo is for my personal reference to document my solutions in Hackerrank.
