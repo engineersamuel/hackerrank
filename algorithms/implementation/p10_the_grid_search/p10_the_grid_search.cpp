@@ -61,6 +61,37 @@ int main(){
             if (contains) break;
         }
 
+// This snippet passes all but 1 or 2 test cases.  I wanted to make this work but it is missing some edge cases, I suspect
+// I was not correctly handling the find using the progressive smaller substring like above.  Before I explored that approach
+// I realized that the solution is so much more elegant using recurssion so I stuck with that.  Recording this just for reference
+// in case I want to re-visit the non-recurssion approach.
+//    int contains = false;
+//    for (int i = 0; i < R; i++) {
+//
+//        // If we've found at least the string in this row, then n2 search
+//        if (G[i].find(P[0]) != string::npos) {
+//
+//            for (int row = i; row < R; row++) {
+//                for (int col = 0; col < G[0].size(); col++) {
+//
+//                    for (int row2 = 0; row2 < r && row + row2 < R; row2++) {
+//                        for (int col2 = 0; col2 < P[0].size() && col + col2 < G[0].size(); col2++) {
+//                            contains = (P[row2].at(col2) == G[row + row2].at(col + col2));
+//
+//                            // If this actually does contain, then break so we can go to the next row
+//                            if (!contains) break;
+//                        }
+//                        if (!contains) break;
+//                    }
+//                    if (contains) break;
+//                }
+//                if (contains) break;
+//            }
+//            if (contains) break;
+//        }
+//    }
+
+
         if (contains) {
             cout << "YES" << endl;
         } else {
